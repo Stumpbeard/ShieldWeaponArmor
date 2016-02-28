@@ -60,7 +60,7 @@ Player Arena::simulate()
 	while (p1.currentHealth() > 0 && p2.currentHealth() > 0) {
 		takeTurn();
 	}
-	if (p1.currentHealth() < 0 && p2.currentHealth() <= 0)
+	if (p1.currentHealth() > 0 && p2.currentHealth() <= 0)
 	{
 		return p1;
 	}
